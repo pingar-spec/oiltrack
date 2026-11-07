@@ -3,6 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    /* Estilos base modernos y limpios para móviles */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+        background-color: #f4f6f8;
+        color: #333;
+        padding: 16px;
+        line-height: 1.5;
+    }
+
+    /* Contenedor principal que se adapta al celular */
+    .container, form, .card {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Campos de formulario y botones grandes fáciles de tocar en móvil */
+    input, select, textarea, button {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        border-color: #0066cc;
+    }
+
+    button {
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0052a3;
+    }
+
+    /* Tablas adaptables para que no rompan la pantalla */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        font-size: 0.9rem;
+    }
+</style>
     <title>OilTrack Enterprise - Sistema Móvil de Lubricentro</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
